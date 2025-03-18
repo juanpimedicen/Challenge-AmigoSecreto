@@ -10,6 +10,7 @@ function agregarAmigo(){
 let amigoAgregado = document.getElementById('amigo').value;
 
 console.log(amigoAgregado);
+limpiarInput();
 return;
 
 }
@@ -18,6 +19,9 @@ function sortearAmigo(){
 
 
 }
-
+//Agregando la función de limpiar la caja
+function limpiarInput() {
+    document.querySelector('#amigo').value = '';
+}
 agregarAmigo();
 asignarTextoAmigo('ul',amigoAgregado);
